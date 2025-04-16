@@ -1,78 +1,109 @@
-Heart Disease Analysis in India — Power BI Dashboard
-📁 Project Overview
-This Business Intelligence (BI) project uses Power BI to analyze heart disease trends across India using a dataset originally sourced from Kaggle. To enhance the analytical scope, synthetic variables such as City, Work Type, and Date of Diagnosis were added. The primary goal is to assist health insurance firms in making data-backed decisions regarding premium structuring, risk profiling, and regional segmentation of heart disease insurance policies.
+# 💓 Heart Disease Analysis in India — Power BI Dashboard
 
-🧪 Dataset Description
-The dataset includes the following categories:
+## 📁 Project Overview
+The primary goal is to assist health insurance firms in making data-backed decisions regarding premium structuring, risk profiling, and regional segmentation of heart disease insurance policies.
+This Business Intelligence (BI) project analyzes heart disease patterns across India using a dataset originally sourced from Kaggle. To enable richer analysis, synthetic variables such as `City`, `Work Type`, and `Date of Diagnosis` were added.
 
-Demographics: Age, Gender, City, Work Type
+🔍 **Objective**: Empower health insurance companies to make informed, data-backed decisions for:
+- 💰 Premium structuring  
+- 📊 Risk profiling  
+- 🌍 City-wise segmentation of heart disease insurance policies
 
-Health Indicators: BMI, Blood Pressure, Diabetes Status, Stress Level, Sleep Hours
+---
 
-Lifestyle Factors: Smoking, Alcohol Consumption, Exercise Frequency
+## 🧪 Dataset Description
 
-Medical Markers: C-Reactive Protein (CRP), Homocysteine Level
+The dataset includes:
 
-Temporal Data: Date of Diagnosis (Month, Year)
+- **Demographics**: Age, Gender, City, Work Type  
+- **Health Indicators**: BMI, Blood Pressure, Diabetes Status, Stress Level, Sleep Hours  
+- **Lifestyle Factors**: Smoking, Alcohol Consumption, Exercise Frequency  
+- **Medical Markers**: C-Reactive Protein (CRP), Homocysteine Level  
+- **Temporal Data**: Date of Diagnosis (Month, Year)
 
-🧼 Data Preprocessing and Normalization
-To ensure clean and analyzable data, the following preprocessing steps were undertaken:
+---
 
-Handling Missing Values: NA values were identified and treated through imputation or removal where applicable.
+## 🧼 Data Preprocessing & Normalization
 
-Normalization: Continuous variables such as Age, BMI, CRP, and Homocysteine levels were scaled using Min-Max Normalization to bring them into a 0–1 range.
+To ensure quality insights, the following preprocessing steps were conducted:
 
-Categorical Encoding: Variables like Gender, Work Type, Smoking, and Alcohol levels were converted into numeric form using label encoding and mapping.
+- 🔧 **Missing Value Handling**: Cleaned or imputed where applicable  
+- 📏 **Normalization**: Min-Max scaling of continuous variables (e.g., BMI, Age, CRP, Homocysteine)  
+- 🧠 **Categorical Encoding**: Applied label encoding for gender, city, work type, etc.  
+- 🏙️ **Synthetic Variable Addition**:  
+  - `City` — to enable regional insights  
+  - `Work Type` — to explore occupational health patterns  
+  - `Date of Diagnosis` — for time-series analysis  
 
-Synthetic Data Addition: New fields such as City, Work Type, and Date of Diagnosis were generated hypothetically to simulate real-world scenarios for location and time-based analysis.
+---
 
-This enabled more robust modeling and interactive visualization in Power BI.
+## 🎯 Project Objectives
 
-🎯 Project Objectives
-Analyze how age influences heart disease prevalence.
+- Correlate **age** with heart disease prevalence  
+- Analyze how **BMI** influences blood pressure and diabetes  
+- Evaluate the **impact of exercise** on cardiovascular health  
+- Explore the effects of **smoking and alcohol** on heart disease  
+- Assess how **stress** and **sleep** contribute to heart health  
+- Visualize **city-level** and **temporal trends** in diagnosis patterns  
 
-Study the correlation between BMI, blood pressure, and diabetes.
+---
 
-Assess the impact of exercise on heart health.
+## 📊 Tools & Technologies
 
-Explore how smoking and alcohol consumption affect heart disease risk.
+- 💻 **Power BI** – for interactive dashboard creation  
+- 📊 **Excel** – for normalization, encoding, and data preparation  
+- 🐍 *(Optional)* Python – for data validation and preprocessing  
 
-Examine stress and sleep quality as contributors.
+---
 
-Identify geographic (city-based) and temporal (month/year) trends.
+## 🧠 Key Insights for Health Insurers
 
-🧠 Key Insights for Health Insurers
-✅ Age-Based Risk
-Risk increases significantly after age 40, peaking post 60 years.
+### 🧓 Age-Based Risk
+- Risk increases significantly **after age 40**, and peaks **post 60**
+- Suggests preventive screening and adjusted premiums for senior applicants  
 
-Premium brackets can be aligned to these age thresholds.
+### ⚖️ BMI & Chronic Conditions
+- Individuals with **BMI ≥ 25** show increased rates of **hypertension** and **diabetes**
+- Incentives for healthy BMI could reduce claims burden  
 
-✅ BMI & Chronic Conditions
-Individuals with BMI ≥ 25 are more susceptible to hypertension and diabetes.
+### 🚬 Lifestyle Behaviors
+- **Smoking + Alcohol** users are at the highest risk
+- Lifestyle-based rating models recommended  
 
-Risk-based premium scaling can be used for overweight profiles.
+### 😴 Stress & Sleep
+- **High stress** and **low sleep** are associated with elevated heart risk markers (CRP, Homocysteine)  
+- Targeted wellness programs can reduce claims  
 
-✅ Lifestyle Behaviors
-Smoking and heavy alcohol consumption substantially increase heart disease incidence.
+### 🏙️ City-Wise Segmentation
+- **Metro cities** show higher prevalence — likely due to pollution and lifestyle  
+- Policies can be tailored by urban/rural location  
+- **Winter months** show upticks — seasonal factors may contribute  
 
-Emphasis on behavioral health disclosures during policy onboarding.
+---
 
-✅ Stress & Sleep Patterns
-High stress and low sleep hours correlate with elevated heart risk markers.
+## 📈 Output: Power BI Dashboard
 
-Stress-sensitive occupations may warrant higher scrutiny.
+The interactive dashboard visualizes all findings dynamically, allowing stakeholders to filter insights by:
+- City  
+- Time (Month, Year)  
+- Lifestyle habits  
+- Health indicators  
 
-✅ City-Wise Segmentation
-Urban areas (especially metro cities) report higher cases, likely due to lifestyle and environmental factors.
+---
 
-Consider city-specific underwriting rules and wellness incentives.
+## 🏁 Conclusion
 
-📊 Tools & Technologies
-Power BI: Visual analytics and dashboard creation
+This project demonstrates how **data-driven BI tools** can help insurers, researchers, and public health stakeholders:
+- Identify high-risk groups  
+- Design targeted interventions  
+- Optimize premium structures  
 
-MS Excel: Data transformation, normalization, and encoding
+For best outcomes, larger and real-time datasets can be incorporated in future research.
 
-Python (optional): For data validation and preprocessing (if required)
+---
 
-🏁 Conclusion
-The insights from this Power BI dashboard offer actionable guidance for health insurance firms, enabling smarter underwriting, regional targeting, and risk-aligned pricing. This project showcases how data-driven decisions can enhance both operational efficiency and public health outcomes.
+## 📂 Files Included
+
+- `Heart_Disease_India_Dashboard.pbix` — Power BI Dashboard File  
+- `heart_disease_india_dataset_normalised.xlsx` — Cleaned and Preprocessed Dataset  
+
